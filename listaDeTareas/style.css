@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Prompt' , sans-serif;
+    background: rgb(17, 11, 24);
+}
+
+
+
+.container{
+    border: 1px solid rgba(46, 46, 46, 0.347);
+    background: rgba(255, 255, 255, 0.088);
+    width: 800px;
+    height: 600px;
+    
+    border-radius: 1.5rem;
+    margin:5% auto;
+    padding: 0 30px;
+    background-image: url(confi.jpeg) ;
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.313);
+    overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+
+ .circle{
+    background: purple;
+    /* top: -150px;
+    left: -110px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    position: absolute;
+    filter: blur(150px);
+    opacity: 1;
+} 
+
+.circle:nth-child(1) {
+    top: 100px;
+    left:100px ;
+}
+
+.circle:nth-child(2) {
+    top: 500px;
+    right:100px ;
+}
+
+/* perfil */
+
+.perfil h1{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.perfil span{
+    color: white;
+    letter-spacing: 1px;
+}
+
+#fecha{
+    color: white;
+    padding: 40px 0 20px 0;
+}
+
+.agregar-tarea{
+    background-color: white;
+    border-radius: 15px;
+    width: 40%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 2% 0 3% 0;
+    
+}
+
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.agregar-tarea i{
+    font-size: 30px;
+    color:purple;
+}
+
+.agregar-tarea i:hover{
+    transform: rotate(400deg) scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size: 1.1rem;
+    color: purple;
+}
+
+/* seccion tarea */
+
+.seccion-tarea h3{
+    color: white;
+    
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+}
+
+.seccion-tarea li{
+    display: flex;
+    width: 40%;
+    background:rgba(255, 255, 255, 0.805);
+    border-radius: 1rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+    color: purple;
+}
+
+.seccion-tarea i{
+    font-size: 25px;
+}
+
+.seccion-tarea i:hover{
+    color: rgba(128, 0, 128, 0.421);
+    cursor: pointer;
+}
+
+.seccion-tarea > ul p{
+    font-size: 1rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: rgb(107, 3, 107);
+}
+
+/* .img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+} */
